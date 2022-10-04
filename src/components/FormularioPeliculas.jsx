@@ -23,7 +23,7 @@ const FormularioPeliculas = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    let objetoPelicula = { pelicula, descripcion, genero };
+    let objetoPelicula = {pelicula, descripcion, genero };
     setarregloPeliculas([...arregloPeliculas, objetoPelicula]);
     setPelicula("");
     setdescripcion("");

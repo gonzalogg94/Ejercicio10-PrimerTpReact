@@ -6,8 +6,9 @@ const ListaPeliculas = ({arregloPeliculas,borrarPelicula}) => {
         <div className="row">
           {arregloPeliculas.map((pelicula, posicion) => (
             <ItemPelicula key={posicion}
-            nombre={pelicula.mascota}
+            nombre={pelicula.pelicula}
             descripcion={pelicula.descripcion}
+            genero={pelicula.genero}
             borrarPelicula={borrarPelicula}>
           </ItemPelicula>
           ))}
